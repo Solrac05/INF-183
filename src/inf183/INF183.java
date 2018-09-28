@@ -18,9 +18,16 @@ public class INF183 {
         }
         return total;
     }
+     public static int wow(double base, int exponent) {
+        if(exponent == 0){
+            return 1;
+        }
+        return (int) (base * Power(base,exponent - 1));
+    }
+    
     public static void main(String[] args) {
-           int temp =(int) Power(4,3);
-           System.out.println(temp);
+           int temp = wow(2,3);
+            System.out.println(temp);
        
     }
     
