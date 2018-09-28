@@ -11,11 +11,18 @@ package inf183;
  */
 public class INF183 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("wow");   
+    public static double Power (double x, int y) {
+        int total =1;
+        for (int i=1; i<= y; i++){
+         total*=x;   
+        }
+        return total;
     }
+    public static void main(String[] args) {
+           int temp =(int) Power(4,3);
+           System.out.println(temp);
+       
+    }
+    
     
 }
